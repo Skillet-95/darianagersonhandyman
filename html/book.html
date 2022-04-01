@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> ProFix | Book </title>
+        <title> HANDYMAN </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/book.css">
-        <link rel="icon" href="../images/logo/logo-icon.png"> 
+        <link rel="icon" href="../images/logo/logo-icon.png">
+
     </head>
 
     <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
 
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDhzI0sOSWZXb6E6E5m-2JbFDRuQRsR-wo",
+            authDomain: "handyman-c4fb0.firebaseapp.com",
+            projectId: "handyman-c4fb0",
+            storageBucket: "handyman-c4fb0.appspot.com",
+            messagingSenderId: "241169222199",
+            appId: "1:241169222199:web:56deca8dd1d81cb0130db2",
+            measurementId: "G-KWDRLXYCKL"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
         <header>
-       
-            <div class="links">
-                  <div class="logo">
-                      <img src="../images/logo/logo_transparent.png" alt="">
-                  </div>
-       
-                  <nav>
-                      <a href="home.html"> HOME </a>
-                      <a href="home.html #service"> SERVICES </a>
-                      <a href="home.html #aboutus"> ABOUT</a>
-                      <a href="home.html #contactus"> CONTACT US</a>
-                  </nav>
-            </div>
+
         </header>
 
 
@@ -50,12 +61,12 @@
               </div>
               <select name="special"  class="choice">
                     <option selected disabled>  Choose a special  </option>
-                    <option> Air Conditioning </option>
+                    <option> Cleaning </option>
                     <option> Carpentary </option>
                     <option> Electrician </option>
                     <option> Painting </option>
                     <option> Plumbing </option>
-                    <option> Glass & Aluminium </option>
+                    <option> Remodeling </option>
               </select>
 
               <div class="date">
